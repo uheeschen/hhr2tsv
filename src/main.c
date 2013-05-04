@@ -1,5 +1,8 @@
 #include "convert.h"
-
+/** \brief Entry point of hhr2tsv
+ * Convert hhr file from HHBlits output to tsv (tab separated values) file
+ * Usage: hhr2tsv <hhr_file> <tsv_file>
+ */
 int main(int argc, const char** argv)
 {
 	FILE *fhhr, *ftsv;
@@ -32,3 +35,4 @@ int main(int argc, const char** argv)
 
 	return 0;
 }
+

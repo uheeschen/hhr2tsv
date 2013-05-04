@@ -8,3 +8,20 @@ Install
 
 Please read INSTALL for installation instructions.
 
+Install in a hurry
+=======
+
+Perform following commands:
+./configure --prefix=/opt/hhr2tsv
+./make
+./make install
+./make clean
+
+Call hhr2tsv by:
+/opt/hhr2tsv/bin/hhr2tsv
+
+Or make a symbolic link in /usr/local/bin:
+ln -sv /opt/hhr2tsv/bin/hhr2tsv /usr/local/bin/hhr2tsv
+
+And then simply call:
+hhr2tsv

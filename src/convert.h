@@ -4,10 +4,22 @@
 #include <stdio.h>
 #include <string.h>
 
+/** Size of buffer for storing string in memory
+ */
 #define BUFF_SIZE	(4096)
-#define VALUE_SIZE	(16)
-#define KEY_SIZE	(24)
 
+/** Size of buffer for storing statistics values in hhr file
+ * e.g. Probab=<value>
+ */
+#define VALUE_SIZE	(16)
+
+/** Size of buffer for storing statistics keys in hhr file
+ * e.g. Probab=<value>
+ */
+#define KEY_SIZE	(16)
+
+/** Error code for wrong hhr header
+ */
 #define ERROR_WRONG_HEADER (1)
 
 /** \brief convert hhr file to tsv file
